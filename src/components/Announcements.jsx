@@ -1,6 +1,9 @@
 import React from "react";
 import LongCards from "./LongCards";
 import Dropdown from "./Dropdown";
+import deeppin from "../images/deep_pin.png";
+import pin from "../images/pin.png";
+import dots from "../images/dots.png";
 
 const Announcements = () => {
   return (
@@ -14,15 +17,15 @@ const Announcements = () => {
           title={"Outing schedule for every department"}
           time={"5 minutes ago"}
           ispin={true}
-          pinsrc={"src/images/deep_pin.png"}
-          dotsrc={"src/images/dots.png"}
+          pinsrc={deeppin}
+          dotsrc={dots}
         />
         <LongCards
           title={"Meeting HR Department"}
           time={"5 minutes ago"}
           ispin={true}
-          pinsrc={"src/images/pin.png"}
-          dotsrc={"src/images/dots.png"}
+          pinsrc={pin}
+          dotsrc={dots}
         />
         <LongCards
           title={
@@ -30,8 +33,8 @@ const Announcements = () => {
           }
           time={"5 minutes ago"}
           ispin={true}
-          pinsrc={"src/images/pin.png"}
-          dotsrc={"src/images/dots.png"}
+          pinsrc={pin}
+          dotsrc={dots}
         />
       </ul>
       <p className="text-textred text-xs md:text-sm py-1 border-t-2 border-gray-200 block text-center">

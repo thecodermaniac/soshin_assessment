@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import srh from "../images/srh.png";
 
 const Search = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -16,7 +17,7 @@ const Search = () => {
           placeholder="Search"
           className="flex-grow text-sm text-gray-700 bg-transparent focus:outline-none w-72"
         />
-        <img src="src\images\srh.png" className="ml-2 h-5 w-5" />
+        <img src={srh} className="ml-2 h-5 w-5" />
       </div>
 
       {/* Mobile View */}
@@ -26,7 +27,7 @@ const Search = () => {
           className="p-2 rounded-md border-0 border-gray-300 shadow-sm bg-white text-gray-700 hover:bg-gray-50 focus:outline-none"
           onClick={toggleSearch}
         >
-          <img src="src\images\srh.png" className="h-5 w-5 flex float-left" />
+          <img src={srh} className="h-5 w-5 flex float-left" />
         </button>
         {isSearchOpen && (
           <input

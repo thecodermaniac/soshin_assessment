@@ -1,5 +1,13 @@
 import React from "react";
 import SidebarOptions from "./SidebarOptions";
+import logo from "../images/logo.png";
+import dash from "../images/dash.png";
+import recruit from "../images/recruit.png";
+import schedule from "../images/schedule.png";
+import emp from "../images/emp.png";
+import dept from "../images/dept.png";
+import support from "../images/support.png";
+import set from "../images/set.png";
 
 const Sidebar = ({ isOpen, onClose }) => {
   return (
@@ -11,7 +19,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       {/* Replace with actual logo */}
       <img
         className="bg-transparent rounded ml-6 mb-6"
-        src="src\images\logo.png"
+        src={logo}
         width={143}
         height={37}
       />
@@ -27,27 +35,27 @@ const Sidebar = ({ isOpen, onClose }) => {
         </h3>
         <ul className="space-y-4">
           <SidebarOptions
-            imgsrc="src\images\dash.png"
+            imgsrc={dash}
             option="Dashboard"
             customclass="text-textred"
           />
           <SidebarOptions
-            imgsrc="src\images\recruit.png"
+            imgsrc={recruit}
             option="Recruitment"
             customclass="text-textgray"
           />
           <SidebarOptions
-            imgsrc="src\images\schedule.png"
+            imgsrc={schedule}
             option="Schedule"
             customclass="text-textgray"
           />
           <SidebarOptions
-            imgsrc="src\images\emp.png"
+            imgsrc={emp}
             option="Employee"
             customclass="text-textgray"
           />
           <SidebarOptions
-            imgsrc="src\images\dept.png"
+            imgsrc={dept}
             option="Department"
             customclass="text-textgray"
           />
@@ -59,12 +67,12 @@ const Sidebar = ({ isOpen, onClose }) => {
         </h3>
         <ul className="space-y-4">
           <SidebarOptions
-            imgsrc="src\images\support.png"
+            imgsrc={support}
             option="Support"
             customclass="text-textgray"
           />
           <SidebarOptions
-            imgsrc="src\images\set.png"
+            imgsrc={set}
             option="Settings"
             customclass="text-textgray"
           />

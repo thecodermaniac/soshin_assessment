@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Search from "./components/Search";
+import bell from "./images/bell.png";
+import msg from "./images/msg.png";
+import user from "./images/user.png";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -22,10 +25,10 @@ function App() {
           </div>
 
           <div className="flex items-center gap-4 mr-2">
-            <img width={16} height={16} src="src\images\bell.png" />
-            <img width={16} height={16} src="src\images\msg.png" />
+            <img width={16} height={16} src={bell} />
+            <img width={16} height={16} src={msg} />
             <div className="flex items-center gap-2">
-              <img width={42} height={42} src="src\images\user.png" />
+              <img width={42} height={42} src={user} />
             </div>
           </div>
         </header>

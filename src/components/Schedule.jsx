@@ -1,6 +1,7 @@
 import React from "react";
 import LongCards from "./LongCards";
 import Dropdown from "./Dropdown";
+import dots from "../images/dots.png";
 
 const Schedule = () => {
   return (
@@ -19,7 +20,7 @@ const Schedule = () => {
             time={"Today - 11.30 AM"}
             ispin={false}
             pinsrc={""}
-            dotsrc={"src/images/dots.png"}
+            dotsrc={dots}
           />
         </ul>
       </div>
@@ -31,14 +32,14 @@ const Schedule = () => {
             time={"Today - 11.30 AM"}
             ispin={false}
             pinsrc={""}
-            dotsrc={"src/images/dots.png"}
+            dotsrc={dots}
           />
           <LongCards
             title={"Short meeting with product designer"}
             time={"Today - 09.30 AM"}
             ispin={false}
             pinsrc={""}
-            dotsrc={"src/images/dots.png"}
+            dotsrc={dots}
           />
         </ul>
       </div>

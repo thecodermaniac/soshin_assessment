@@ -5,6 +5,11 @@ import RecentActivity from "./RecentActivity";
 import Schedule from "./Schedule";
 import Metrics from "./Metrics";
 import Search from "./Search";
+import bell from "../images/bell.png";
+import msg from "../images/msg.png";
+import user from "../images/user.png";
+import graph1 from "../images/graph_1.png";
+import graph2 from "../images/graph_2.png";
 
 const Dashboard = () => {
   return (
@@ -12,10 +17,10 @@ const Dashboard = () => {
       <header className="hidden md:flex justify-between items-center mb-8 py-6 ml-10">
         <Search />
         <div className="flex items-center gap-14 mr-8">
-          <img width={18} height={18} src="src\images\bell.png" />
-          <img width={18} height={18} src="src\images\msg.png" />
+          <img width={18} height={18} src={bell} />
+          <img width={18} height={18} src={msg} />
           <div className="flex items-center gap-2">
-            <img width={42} height={42} src="src\images\user.png" />
+            <img width={42} height={42} src={user} />
             <div className="font-semibold">Admirra John</div>
           </div>
         </div>
@@ -52,7 +57,7 @@ const Dashboard = () => {
               subtext="+2% Past month"
               men="120"
               women="96"
-              imgsrc={"src/images/graph_1.png"}
+              imgsrc={graph1}
             />
             <Metrics
               title="Talent Request"
@@ -60,7 +65,7 @@ const Dashboard = () => {
               subtext="-1% Past month"
               men="6"
               women="10"
-              imgsrc={"src/images/graph_2.png"}
+              imgsrc={graph2}
             />
           </div>
           <Announcements />
